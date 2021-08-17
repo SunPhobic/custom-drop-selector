@@ -3,6 +3,10 @@
     padding: 0%;
 }
 
+:root{
+    --background-color-selector:#1D1E20;
+}
+
 /*hamburger menu*/
 #css-burger{
     display: flex;
@@ -11,8 +15,9 @@
     top: 50px;
     width:300px;
     height: 40px;
-    background-color:cornsilk;
-    border-style: solid;
+    color: white;
+    background-color:var(--background-color-selector);
+    border: 3px solid var(--background-color-selector);
     align-items: center;
     
 }
@@ -30,17 +35,16 @@
     width:300px;
     height:120px;
     overflow-y: scroll;
-    background-color: darksalmon;
-    border-style: solid;
+    border: 3px solid var(--background-color-selector);
     list-style: none;
     z-index: 999;
 }
 .css-burger-option{
     padding:0.5em 0 0.5em 0.5em;
-    background-color:darkseagreen;
+    background-color:var(--background-color-selector);
 }
 .css-burger-option:hover{
-    background-color: ghostwhite;
+    background-color:rgb(4, 170, 109);
 }  
 
 #css-burger-arrow-checked{
@@ -73,21 +77,21 @@
     margin-top: 2px;
     width: 30px;
     height: 5px;
-    background-color:brown;
+    background-color:rgb(4, 170, 109);
     border-radius: 5px;
 }
 #css-burger-middle-slab{
     margin-top: 5px;
     width: 30px;
     height: 5px;
-    background-color:brown;
+    background-color:rgb(4, 170, 109);
     border-radius: 5px;
 }
 #css-burger-bottom-slab{
     margin-top: 5px;
     width: 30px;
     height: 5px;
-    background-color:brown;
+    background-color:rgb(4, 170, 109);
     border-radius: 5px;
 }
 #css-burger-arrow-checked:checked~#css-burger-burger > #css-burger-middle-slab{
@@ -115,8 +119,9 @@
     left:100px;
     width:300px;
     height: 40px;
-    background-color: aquamarine;
-    border-style: solid;
+    background-color: var(--background-color-selector);
+    border: 3px solid var(--background-color-selector);
+    color:white;
 }
 #js-selector{
     display: block;
@@ -125,20 +130,20 @@
     left: -3px;
     width:300px;
     height: 120px;
-    border-style: solid;
+    border: 3px solid var(--background-color-selector);
     overflow-y: scroll;
 }
 .js-selector-option{
     padding:0.5em 0 0.5em 0.5em;
-    background-color:darkseagreen;
+    background-color:var(--background-color-selector);
 }
 .js-selector-option:hover{
-    background-color: azure;
+    background-color: rgb(4, 170, 109);
 }
 
 #js-selector-arrow-down{
     margin-top: 20%;
-    border-top: solid 10px red;
+    border-top: solid 10px rgb(4, 170, 109);
     border-left: solid 10px transparent;
     border-right: solid 10px transparent;
     border-bottom: solid 10px transparent;
@@ -150,7 +155,7 @@
     border-top: solid 10px transparent;
     border-left: solid 10px transparent;
     border-right: solid 10px transparent;
-    border-bottom: solid 10px red;
+    border-bottom: solid 10px rgb(4, 170, 109);
 }
 #js-selector-button{
     display: flex;
@@ -161,7 +166,7 @@
     
     width: 40px;
     height: 100%;
-    background-color:cadetblue;
+    background-color:var(--background-color-selector);
 }
 #js-selector-span{
     margin-left: 0.5em;

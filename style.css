@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding: 0%;
+}
+
+/*hamburger menu*/
+#css-burger{
+    display: flex;
+    position:absolute;
+    left: 100px;
+    top: 50px;
+    width:300px;
+    height: 40px;
+    background-color:cornsilk;
+    border-style: solid;
+    align-items: center;
+    
+}
+#span{
+    margin-left: 0.5em;
+}
+#css-burger-dropdown::-webkit-scrollbar {
+    display: none;
+  }
+#css-burger-dropdown{
+    display:none;
+    position: absolute;
+    top: 40px;
+    left: -3px;
+    width:300px;
+    height:120px;
+    overflow-y: scroll;
+    background-color: darksalmon;
+    border-style: solid;
+    list-style: none;
+    z-index: 999;
+}
+.css-burger-option{
+    padding:0.5em 0 0.5em 0.5em;
+    background-color:darkseagreen;
+}
+.css-burger-option:hover{
+    background-color: ghostwhite;
+}  
+
+#css-burger-arrow-checked{
+    opacity: 0;
+    position: absolute;
+    left: 91%;
+    top:15px;
+    z-index: 3;
+}
+#css-burger-arrow-checked:checked~#css-burger-dropdown{
+    display:block;
+}
+
+#css-burger-burger{
+    position: absolute;
+    left: 87%;
+    height: 30px;
+    width: 30px;
+}
+#css-burger-label{
+    opacity: 0;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 87%;
+    z-index: 999;
+}
+
+#css-burger-top-slab{
+    margin-top: 2px;
+    width: 30px;
+    height: 5px;
+    background-color:brown;
+    border-radius: 5px;
+}
+#css-burger-middle-slab{
+    margin-top: 5px;
+    width: 30px;
+    height: 5px;
+    background-color:brown;
+    border-radius: 5px;
+}
+#css-burger-bottom-slab{
+    margin-top: 5px;
+    width: 30px;
+    height: 5px;
+    background-color:brown;
+    border-radius: 5px;
+}
+#css-burger-arrow-checked:checked~#css-burger-burger > #css-burger-middle-slab{
+    display: none;
+}
+#css-burger-arrow-checked:checked~#css-burger-burger > #css-burger-top-slab{
+    transform: rotate(45deg);
+    position:absolute;
+    top: 10px;
+}
+#css-burger-arrow-checked:checked~#css-burger-burger > #css-burger-bottom-slab{
+    transform: rotate(135deg);
+    position:absolute;
+    top: 7px;
+}
+
+/*js-selector*/
+
+
+#js-selector-container{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 250px;
+    left:100px;
+    width:300px;
+    height: 40px;
+    background-color: aquamarine;
+    border-style: solid;
+}
+#js-selector{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: -3px;
+    width:300px;
+    height: 120px;
+    border-style: solid;
+    overflow-y: scroll;
+}
+.js-selector-option{
+    padding:0.5em 0 0.5em 0.5em;
+    background-color:darkseagreen;
+}
+.js-selector-option:hover{
+    background-color: azure;
+}
+
+#js-selector-arrow-down{
+    margin-top: 20%;
+    border-top: solid 10px red;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+    
+}
+
+#js-selector-arrow-up{
+    margin-bottom: 20%;
+    border-top: solid 10px transparent;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+    border-bottom: solid 10px red;
+}
+#js-selector-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    
+    width: 40px;
+    height: 100%;
+    background-color:cadetblue;
+}
+#js-selector-span{
+    margin-left: 0.5em;
+}
